@@ -64,6 +64,8 @@ body {
   margin: 0;
   padding: 0;
   width: 100px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .header .color-menu li {
@@ -82,10 +84,6 @@ body {
       flex-wrap: wrap;
 }
 
-/* 
-  
-  Classes & ID's 
-   */
 /* UL List colors */
 #blue,
 .blue {

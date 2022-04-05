@@ -14,26 +14,30 @@
       <div
         id="menu-btn"
         class="btn-toggle-menu"
-        onmouseover="toggleMenu(false)"
-        onmouseout="toggleMenu(true)"
         tabindex="0"
+        onkeydown="keyNumber(event)"
       >
-        <div class="color-menu">
-          <ul id="colorList" class="nav-sidebar" onkeydown="keyNumber(event)">
-            <li class="list-item" id="home" tabindex="-1" value="1">
+        <div class="color-menu" id="parent-menu">
+          <ul id="colorList" class="nav-sidebar">
+            <li id="home" tabindex="-1">
               <input type="radio" id="colorH" name="radiobtn" />
+              1
             </li>
-            <li class="list-item" id="red" tabindex="-1" va;ue="2">
+            <li id="red" tabindex="-1">
               <input type="radio" id="colorR" name="radiobtn" />
+              2
             </li>
-            <li class="list-item" id="yellow" tabindex="-1">
+            <li id="yellow" tabindex="-1">
               <input type="radio" id="colorY" name="radiobtn" />
+              3
             </li>
-            <li class="list-item" id="green" tabindex="-1">
+            <li id="green" tabindex="-1">
               <input type="radio" id="colorG" name="radiobtn" />
+              4
             </li>
-            <li class="list-item" id="blue" tabindex="-1">
+            <li id="blue" tabindex="-1">
               <input type="radio" id="colorB" name="radiobtn" />
+              5
             </li>
           </ul>
         </div>
