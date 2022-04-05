@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color-Toggle-Assignment</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="index.js"></script>
+  </head>
+
+  <body id="body">
+    <nav class="header">
+      <div
+        id="menu-btn"
+        class="btn-toggle-menu"
+        onmouseover="toggleMenu(false)"
+        onmouseout="toggleMenu(true)"
+        tabindex="0"
+      >
+        <div class="color-menu">
+          <ul id="colorList" class="nav-sidebar" onkeydown="keyNumber(event)">
+            <li class="list-item" id="home" tabindex="-1" value="1">
+              <input type="radio" id="colorH" name="radiobtn" />
+            </li>
+            <li class="list-item" id="red" tabindex="-1" va;ue="2">
+              <input type="radio" id="colorR" name="radiobtn" />
+            </li>
+            <li class="list-item" id="yellow" tabindex="-1">
+              <input type="radio" id="colorY" name="radiobtn" />
+            </li>
+            <li class="list-item" id="green" tabindex="-1">
+              <input type="radio" id="colorG" name="radiobtn" />
+            </li>
+            <li class="list-item" id="blue" tabindex="-1">
+              <input type="radio" id="colorB" name="radiobtn" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="userInformation">Kies een achtergrondkleur uit het menu</div>
+      <div></div>
+    </nav>
+  </body>
+</html>
